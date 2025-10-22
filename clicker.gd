@@ -1,5 +1,5 @@
 extends Node2D
-var level = autoload.multi * 1
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,4 +12,4 @@ func _process(delta: float) -> void:
 
 
 func _on_button_pressed() -> void:
-	autoload.money = autoload.money + level
+	autoload.money = autoload.money + autoload.multi
