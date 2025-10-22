@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://gounb4o7ydxg"]
+
+[ext_resource type="Script" uid="uid://b68ebura8djq1" path="res://moneylabel.gd" id="1_vng66"]
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2(3.89, 3.89)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="StaticBody2D"]
+offset_right = 93.573265
+offset_bottom = 40.0
+script = ExtResource("1_vng66")
