@@ -11,8 +11,18 @@ config_version=5
 [application]
 
 config/name="Newclickerproject"
+run/main_scene="uid://dfcweub1sjdla"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+autoload="*res://main.gd"
+
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=1280
 
 [editor_plugins]
 
