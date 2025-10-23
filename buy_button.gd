@@ -1,4 +1,4 @@
-extends Node2D
+extends Button
 
 
 # Called when the node enters the scene tree for the first time.
@@ -11,5 +11,9 @@ func _process(delta: float) -> void:
 	pass
 
 
-func _on_button_pressed() -> void:
-	get_tree().change_scene_to_file('res://main.tscn')
+func _on_pressed() -> void:
+	if autoload.money >= autoload.limit:
+		autoload.money = autoload.money - 20
+		autoload.limit = autoload.limit + 10 * 1.5
+		print(autoload.limit)
+		
