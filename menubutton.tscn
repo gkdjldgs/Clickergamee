@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://xlpyets03xun"]
 
-[ext_resource type="Script" uid="uid://dsayjgnputm4l" path="res://shopmenu.gd" id="1_noykn"]
+[ext_resource type="Script" uid="uid://i55xl8gxsat5" path="res://menubutton.gd" id="1_noykn"]
 
 [node name="Shop menu" type="Control"]
 layout_mode = 3
@@ -11,16 +11,11 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_noykn")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="Buy?" type="Button" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 190.46
+offset_bottom = 107.0
+theme_override_font_sizes/font_size = 30
+text = "SHOP"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
-layout_mode = 2
-
-[node name="Buy?" type="Button" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-text = "ITEMS"
-
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Buy?" to="." method="_on_buy_pressed"]
+[connection signal="pressed" from="Buy?" to="." method="_on_buy_pressed"]
