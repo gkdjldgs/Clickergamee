@@ -15,11 +15,27 @@ theme_override_font_sizes/font_size = 26
 text = "BACK"
 
 [node name="Buy button" type="Button" parent="."]
-offset_left = 15.0
-offset_top = 17.0
-offset_right = 226.0
-offset_bottom = 226.0
+offset_left = 20.0
+offset_top = 27.0
+offset_right = 231.0
+offset_bottom = 147.0
+text = "1st Upgrade
+"
 script = ExtResource("2_exc4s")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Buy button"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 137.0
+offset_right = 210.0
+offset_bottom = 177.0
+text = "COST: "
+
+[node name="Button" type="Button" parent="."]
+offset_left = 29.0
+offset_top = 215.0
+offset_right = 239.0
+offset_bottom = 332.0
 
 [connection signal="pressed" from="Back Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Buy button" to="Buy button" method="_on_pressed"]
