@@ -14,28 +14,67 @@ offset_bottom = 946.0
 theme_override_font_sizes/font_size = 26
 text = "BACK"
 
-[node name="Buy button" type="Button" parent="."]
-offset_left = 20.0
-offset_top = 27.0
-offset_right = 231.0
-offset_bottom = 147.0
-text = "1st Upgrade
+[node name="Better harvesting" type="Button" parent="."]
+offset_left = 23.0
+offset_top = 140.0
+offset_right = 234.0
+offset_bottom = 260.0
+text = "Better Harvesting
 "
 script = ExtResource("2_exc4s")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Buy button"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Better harvesting"]
 layout_mode = 0
 offset_left = 9.0
 offset_top = 137.0
-offset_right = 210.0
+offset_right = 103.0
 offset_bottom = 177.0
 text = "COST: "
 
-[node name="Button" type="Button" parent="."]
-offset_left = 29.0
-offset_top = 215.0
-offset_right = 239.0
-offset_bottom = 332.0
+[node name="Syrup Refineries" type="Button" parent="."]
+offset_left = 25.0
+offset_top = 329.0
+offset_right = 235.0
+offset_bottom = 446.0
+text = "Syrup Refineries"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Syrup Refineries"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 129.0
+offset_right = 97.0
+offset_bottom = 169.0
+text = "COST:"
+
+[node name="Sky Syrup" type="Button" parent="."]
+offset_left = 27.0
+offset_top = 513.0
+offset_right = 228.0
+offset_bottom = 627.0
+text = "Sky Syrup"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Sky Syrup"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 131.0
+offset_right = 103.0
+offset_bottom = 171.0
+text = "COST:"
+
+[node name="FINISH" type="Button" parent="."]
+offset_left = 31.0
+offset_top = 692.0
+offset_right = 234.0
+offset_bottom = 804.0
+text = "Finish the game"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="FINISH"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 130.0
+offset_right = 103.0
+offset_bottom = 170.0
+text = "COST:"
 
 [connection signal="pressed" from="Back Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Buy button" to="Buy button" method="_on_pressed"]
+[connection signal="pressed" from="Better harvesting" to="Better harvesting" method="_on_pressed"]
