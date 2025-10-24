@@ -8,5 +8,5 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	var text = str(texting, str(autoload.money))
+	var text = str(texting, str(autoload.amount1))
 	self.text = (text)

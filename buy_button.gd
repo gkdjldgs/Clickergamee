@@ -1,4 +1,5 @@
 extends Button
+var limit = autoload.amount1
 
 
 # Called when the node enters the scene tree for the first time.
@@ -12,9 +13,9 @@ func _process(delta: float) -> void:
 
 
 func _on_pressed() -> void:
-	if autoload.money >= autoload.limit:
-		autoload.money = autoload.money - autoload.limit
+	if autoload.money >= limit:
+		autoload.money = autoload.money - limit
+		limit = limit + 7
+		limit = limit * 1.2
 		autoload.multi = autoload.multi + 0.5
-		autoload.limit = autoload.limit + 10 * 1.5
-		print(autoload.limit)
-		
+		autoload.amount1 = autoload.amount1 + 1

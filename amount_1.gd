@@ -1,11 +1,6 @@
-extends Node2D
-#many i
-var money = 0
-var multi = 1
-var limit = 5
-var amount1 = 0
-var amount2 = 0
-var amount3 = 0
+extends RichTextLabel
+var filler = "AMOUNT: "
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -13,8 +8,5 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
-
-
-func _on_button_pressed() -> void:
-	get_tree().change_scene_to_file('res://shopm.tscn')
+	var text = str(filler, str(autoload.amount1))
+	self.text = (text)
