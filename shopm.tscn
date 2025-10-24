@@ -23,13 +23,31 @@ text = "Better Harvesting
 "
 script = ExtResource("2_exc4s")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Better harvesting"]
+[node name="COST1" type="RichTextLabel" parent="Better harvesting"]
 layout_mode = 0
-offset_left = 9.0
-offset_top = 137.0
-offset_right = 103.0
-offset_bottom = 177.0
+offset_left = 8.0
+offset_top = 130.0
+offset_right = 102.0
+offset_bottom = 170.0
 text = "COST: "
+
+[node name="DESCRIPTION1" type="RichTextLabel" parent="Better harvesting"]
+layout_mode = 0
+offset_left = 268.0
+offset_top = 4.0
+offset_right = 477.0
+offset_bottom = 96.0
+text = "Description:
+
+Allows you to get more 	syrup per click."
+
+[node name="AMOUNT1" type="RichTextLabel" parent="Better harvesting"]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 131.0
+offset_right = 207.0
+offset_bottom = 171.0
+text = "AMOUNT:"
 
 [node name="Syrup Refineries" type="Button" parent="."]
 offset_left = 25.0
@@ -38,13 +56,23 @@ offset_right = 235.0
 offset_bottom = 446.0
 text = "Syrup Refineries"
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Syrup Refineries"]
+[node name="COST2" type="RichTextLabel" parent="Syrup Refineries"]
 layout_mode = 0
 offset_left = 4.0
 offset_top = 129.0
 offset_right = 97.0
 offset_bottom = 169.0
 text = "COST:"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Syrup Refineries"]
+layout_mode = 0
+offset_left = 287.0
+offset_top = 2.0
+offset_right = 552.0
+offset_bottom = 118.0
+text = "Description:
+
+Causes you to gain passive syrup over time, but has a chance to break "
 
 [node name="Sky Syrup" type="Button" parent="."]
 offset_left = 27.0
