@@ -1,5 +1,5 @@
 extends Node2D
-#many i
+#many important global v
 var money = 0
 var multi = 1
 var amount1 = 0

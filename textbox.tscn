@@ -8,6 +8,6 @@ scale = Vector2(3.89, 3.89)
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="RichTextLabel" type="RichTextLabel" parent="StaticBody2D"]
-offset_right = 93.573265
+offset_right = 166.83804
 offset_bottom = 40.0
 script = ExtResource("1_vng66")

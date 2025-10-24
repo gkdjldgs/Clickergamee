@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://b8a2vxisi0my2"]
+[gd_scene load_steps=7 format=3 uid="uid://b8a2vxisi0my2"]
 
 [ext_resource type="Script" uid="uid://bsxblpmoafoj0" path="res://shopm.gd" id="1_k3r8j"]
 [ext_resource type="Script" uid="uid://cgfhbb1wr2ma6" path="res://buy_button.gd" id="2_exc4s"]
 [ext_resource type="Script" uid="uid://bnwthufs0wqxm" path="res://cost_1.gd" id="3_46dqn"]
 [ext_resource type="Script" uid="uid://d3b6p4lsnopxy" path="res://moneycounter.gd" id="4_fm3n6"]
 [ext_resource type="Script" uid="uid://bp3nvprv20nn2" path="res://amount_1.gd" id="4_o8ktc"]
+[ext_resource type="Script" uid="uid://bng2b53s0t8il" path="res://cost_2.gd" id="5_lanyg"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_k3r8j")
@@ -89,7 +90,7 @@ offset_top = 133.0
 offset_right = 106.0
 offset_bottom = 173.0
 text = "COST: "
-script = ExtResource("3_46dqn")
+script = ExtResource("5_lanyg")
 
 [node name="Sky Syrup" type="Button" parent="."]
 offset_left = 27.0

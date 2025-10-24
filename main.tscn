@@ -8,16 +8,16 @@
 script = ExtResource("1_ig7tw")
 
 [node name="clicker" parent="." instance=ExtResource("2_0xm2m")]
-position = Vector2(311, 635)
+position = Vector2(298, 846)
 scale = Vector2(1.075, 1.075)
 
 [node name="moneyamount" parent="." instance=ExtResource("3_h2yge")]
 position = Vector2(24, 49.000008)
 
-[node name="Button" type="Button" parent="."]
-offset_left = 45.0
-offset_top = 739.0
-offset_right = 205.0
-offset_bottom = 911.0
+[node name="SHOPBUTTON" type="Button" parent="."]
+offset_left = 29.0
+offset_top = 762.0
+offset_right = 189.0
+offset_bottom = 934.0
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="SHOPBUTTON" to="." method="_on_button_pressed"]
