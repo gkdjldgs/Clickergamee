@@ -33,10 +33,10 @@ text = "COST: "
 
 [node name="DESCRIPTION1" type="RichTextLabel" parent="Better harvesting"]
 layout_mode = 0
-offset_left = 268.0
-offset_top = 4.0
-offset_right = 477.0
-offset_bottom = 96.0
+offset_left = 313.0
+offset_top = 14.0
+offset_right = 522.0
+offset_bottom = 106.0
 text = "Description:
 
 Allows you to get more 	syrup per click."
@@ -64,15 +64,25 @@ offset_right = 97.0
 offset_bottom = 169.0
 text = "COST:"
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Syrup Refineries"]
+[node name="DESCRIPTION2" type="RichTextLabel" parent="Syrup Refineries"]
 layout_mode = 0
-offset_left = 287.0
-offset_top = 2.0
-offset_right = 552.0
-offset_bottom = 118.0
+offset_left = 316.0
+offset_top = 6.0
+offset_right = 581.0
+offset_bottom = 122.0
 text = "Description:
 
-Causes you to gain passive syrup over time, but has a chance to break "
+Causes you to gain passive 
+syrup over time, 
+but has a chance to break."
+
+[node name="AMOUNT2" type="RichTextLabel" parent="Syrup Refineries"]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 133.0
+offset_right = 204.0
+offset_bottom = 173.0
+text = "AMOUNT:"
 
 [node name="Sky Syrup" type="Button" parent="."]
 offset_left = 27.0
@@ -81,7 +91,7 @@ offset_right = 228.0
 offset_bottom = 627.0
 text = "Sky Syrup"
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Sky Syrup"]
+[node name="COST3" type="RichTextLabel" parent="Sky Syrup"]
 layout_mode = 0
 offset_left = 3.0
 offset_top = 131.0
@@ -89,7 +99,27 @@ offset_right = 103.0
 offset_bottom = 171.0
 text = "COST:"
 
+[node name="DESCRIPTION3" type="RichTextLabel" parent="Sky Syrup"]
+layout_mode = 0
+offset_left = 313.0
+offset_top = 8.0
+offset_right = 526.0
+offset_bottom = 110.0
+text = "Description:
+
+Falling leaves from the 
+sky and drop bonuses."
+
+[node name="AMOUNT 3" type="RichTextLabel" parent="Sky Syrup"]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 130.0
+offset_right = 202.0
+offset_bottom = 170.0
+text = "AMOUNT:"
+
 [node name="FINISH" type="Button" parent="."]
+visible = false
 offset_left = 31.0
 offset_top = 692.0
 offset_right = 234.0
