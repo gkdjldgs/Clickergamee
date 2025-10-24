@@ -64,9 +64,10 @@ text = "Syrup Refineries"
 
 [node name="DESCRIPTION2" type="RichTextLabel" parent="Syrup Refineries"]
 layout_mode = 0
-offset_left = 244.0
-offset_right = 569.0
-offset_bottom = 156.0
+offset_left = 232.0
+offset_top = -12.0
+offset_right = 557.0
+offset_bottom = 144.0
 theme_override_font_sizes/normal_font_size = 19
 text = "Description:
 
@@ -99,10 +100,10 @@ text = "Sky Syrup"
 
 [node name="DESCRIPTION3" type="RichTextLabel" parent="Sky Syrup"]
 layout_mode = 0
-offset_left = 240.0
-offset_top = 2.0
-offset_right = 557.0
-offset_bottom = 124.0
+offset_left = 224.0
+offset_top = -5.0
+offset_right = 541.0
+offset_bottom = 117.0
 theme_override_font_sizes/normal_font_size = 19
 text = "Description:
 
@@ -117,7 +118,7 @@ offset_right = 202.0
 offset_bottom = 170.0
 text = "AMOUNT:"
 
-[node name="COST4" type="RichTextLabel" parent="Sky Syrup"]
+[node name="COST3" type="RichTextLabel" parent="Sky Syrup"]
 layout_mode = 0
 offset_left = 9.0
 offset_top = 130.0
@@ -143,18 +144,18 @@ offset_bottom = 170.0
 text = "COST:"
 
 [node name="SHOPNAME" type="TextEdit" parent="."]
-offset_left = 30.0
-offset_top = 31.0
-offset_right = 446.0
-offset_bottom = 93.0
+offset_left = 125.0
+offset_top = 37.0
+offset_right = 541.0
+offset_bottom = 99.0
 theme_override_font_sizes/font_size = 40
 text = "UPGRADES FOR SALE"
 
 [node name="TextEdit" type="TextEdit" parent="."]
-offset_left = 474.0
-offset_top = 33.0
-offset_right = 623.0
-offset_bottom = 90.0
+offset_left = 213.0
+offset_top = 885.0
+offset_right = 589.0
+offset_bottom = 942.0
 theme_override_font_sizes/font_size = 29
 text = "SYRUP: "
 script = ExtResource("4_fm3n6")
