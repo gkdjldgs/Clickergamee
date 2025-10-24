@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://b8a2vxisi0my2"]
+[gd_scene load_steps=5 format=3 uid="uid://b8a2vxisi0my2"]
 
 [ext_resource type="Script" uid="uid://bsxblpmoafoj0" path="res://shopm.gd" id="1_k3r8j"]
 [ext_resource type="Script" uid="uid://cgfhbb1wr2ma6" path="res://buy_button.gd" id="2_exc4s"]
+[ext_resource type="Script" uid="uid://bnwthufs0wqxm" path="res://cost_1.gd" id="3_46dqn"]
+[ext_resource type="Script" uid="uid://d3b6p4lsnopxy" path="res://moneycounter.gd" id="4_fm3n6"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_k3r8j")
@@ -30,6 +32,7 @@ offset_top = 130.0
 offset_right = 102.0
 offset_bottom = 170.0
 text = "COST: "
+script = ExtResource("3_46dqn")
 
 [node name="DESCRIPTION1" type="RichTextLabel" parent="Better harvesting"]
 layout_mode = 0
@@ -56,14 +59,6 @@ offset_right = 235.0
 offset_bottom = 446.0
 text = "Syrup Refineries"
 
-[node name="COST2" type="RichTextLabel" parent="Syrup Refineries"]
-layout_mode = 0
-offset_left = 4.0
-offset_top = 129.0
-offset_right = 97.0
-offset_bottom = 169.0
-text = "COST:"
-
 [node name="DESCRIPTION2" type="RichTextLabel" parent="Syrup Refineries"]
 layout_mode = 0
 offset_left = 316.0
@@ -84,20 +79,21 @@ offset_right = 204.0
 offset_bottom = 173.0
 text = "AMOUNT:"
 
+[node name="COST2" type="RichTextLabel" parent="Syrup Refineries"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 133.0
+offset_right = 106.0
+offset_bottom = 173.0
+text = "COST: "
+script = ExtResource("3_46dqn")
+
 [node name="Sky Syrup" type="Button" parent="."]
 offset_left = 27.0
 offset_top = 513.0
 offset_right = 228.0
 offset_bottom = 627.0
 text = "Sky Syrup"
-
-[node name="COST3" type="RichTextLabel" parent="Sky Syrup"]
-layout_mode = 0
-offset_left = 3.0
-offset_top = 131.0
-offset_right = 103.0
-offset_bottom = 171.0
-text = "COST:"
 
 [node name="DESCRIPTION3" type="RichTextLabel" parent="Sky Syrup"]
 layout_mode = 0
@@ -118,6 +114,15 @@ offset_right = 202.0
 offset_bottom = 170.0
 text = "AMOUNT:"
 
+[node name="COST4" type="RichTextLabel" parent="Sky Syrup"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 130.0
+offset_right = 103.0
+offset_bottom = 170.0
+text = "COST: "
+script = ExtResource("3_46dqn")
+
 [node name="FINISH" type="Button" parent="."]
 visible = false
 offset_left = 31.0
@@ -133,6 +138,23 @@ offset_top = 130.0
 offset_right = 103.0
 offset_bottom = 170.0
 text = "COST:"
+
+[node name="SHOPNAME" type="TextEdit" parent="."]
+offset_left = 30.0
+offset_top = 31.0
+offset_right = 446.0
+offset_bottom = 93.0
+theme_override_font_sizes/font_size = 40
+text = "UPGRADES FOR SALE"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 474.0
+offset_top = 33.0
+offset_right = 623.0
+offset_bottom = 90.0
+theme_override_font_sizes/font_size = 29
+text = "SYRUP: "
+script = ExtResource("4_fm3n6")
 
 [connection signal="pressed" from="Back Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Better harvesting" to="Better harvesting" method="_on_pressed"]
