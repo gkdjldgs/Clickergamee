@@ -1,5 +1,6 @@
 extends RichTextLabel
 var texting = 'COST: '
+var texted = "LOCKED"
 var amount = autoload.amount1
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -8,8 +9,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if autoload.amount1 >= 7:
-		var text = str(texting, str(amount))
-	else:
-		var text = ('LOCKED')
-	self.text = (text)
+	if autoload.amount1 >= 5:
+		var texts = str(texting,str(autoload.limit2))
+		self.text = texts
+	elif autoload.amount1 < 5:
+		var texts = texted
+		self.text = texts

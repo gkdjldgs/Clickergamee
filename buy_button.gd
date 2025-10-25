@@ -17,5 +17,5 @@ func _on_pressed() -> void:
 		autoload.limit1 += 7
 		autoload.limit1 *= 1.2
 		autoload.limit1 = round(autoload.limit1)
-		autoload.multi = autoload.multi + 0.5
+		autoload.multi = autoload.multi + 1
 		autoload.amount1 = autoload.amount1 + 1
