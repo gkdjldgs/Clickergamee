@@ -19,3 +19,4 @@ script = ExtResource("2_rqo5q")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
 [connection signal="timeout" from="moneytimer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
