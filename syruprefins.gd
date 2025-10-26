@@ -3,6 +3,7 @@ var broken = false
 var cost1 = int(autoload.amount1 * 1.25)
 var cost2 = int(autoload.amount2 * 1.4)
 var repair = round(cost1 + cost2)
+
 @onready var butt = get_node("Button")
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

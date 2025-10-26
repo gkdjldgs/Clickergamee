@@ -1,14 +1,24 @@
-[gd_scene load_steps=2 format=3 uid="uid://cabycvnnsayrh"]
+[gd_scene load_steps=3 format=3 uid="uid://cabycvnnsayrh"]
 
 [ext_resource type="Script" uid="uid://sit42o0arkus" path="res://clicker.gd" id="1_lbgm6"]
+[ext_resource type="Texture2D" uid="uid://d112utc1crtj" path="res://images/syrupclicker.png" id="2_gyk0w"]
 
 [node name="Clickerbutton" type="Node2D"]
 script = ExtResource("1_lbgm6")
 
 [node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+z_index = -1
 offset_left = -80.0
 offset_top = -79.0
 offset_right = 82.0
 offset_bottom = 83.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+
+[node name="Syrupclicker" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-1.9073486e-06, 2.9999998)
+scale = Vector2(5.0625, 5.0625)
+texture = ExtResource("2_gyk0w")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

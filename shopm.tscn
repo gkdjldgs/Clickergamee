@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b8a2vxisi0my2"]
+[gd_scene load_steps=10 format=3 uid="uid://b8a2vxisi0my2"]
 
 [ext_resource type="Script" uid="uid://bsxblpmoafoj0" path="res://shopm.gd" id="1_k3r8j"]
 [ext_resource type="Script" uid="uid://cgfhbb1wr2ma6" path="res://buy_button.gd" id="2_exc4s"]
@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://dm7uago7w6mg" path="res://syrup_refineries.gd" id="5_d56hx"]
 [ext_resource type="Script" uid="uid://bng2b53s0t8il" path="res://cost_2.gd" id="5_lanyg"]
 [ext_resource type="Script" uid="uid://b1u8ev1118yj8" path="res://amount_2.gd" id="6_liigi"]
+[ext_resource type="Texture2D" uid="uid://rbj174f0mvbu" path="res://images/othertitle.png" id="9_abuh3"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_k3r8j")
@@ -148,14 +149,6 @@ offset_right = 103.0
 offset_bottom = 170.0
 text = "COST:"
 
-[node name="SHOPNAME" type="TextEdit" parent="."]
-offset_left = 125.0
-offset_top = 37.0
-offset_right = 541.0
-offset_bottom = 99.0
-theme_override_font_sizes/font_size = 40
-text = "UPGRADES FOR SALE"
-
 [node name="TextEdit" type="TextEdit" parent="."]
 offset_left = 213.0
 offset_top = 885.0
@@ -164,6 +157,11 @@ offset_bottom = 942.0
 theme_override_font_sizes/font_size = 29
 text = "SYRUP: "
 script = ExtResource("4_fm3n6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(325, 60)
+scale = Vector2(2.53125, 2.53125)
+texture = ExtResource("9_abuh3")
 
 [connection signal="pressed" from="Back Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Better harvesting" to="Better harvesting" method="_on_pressed"]

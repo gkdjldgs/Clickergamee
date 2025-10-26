@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://8gjhtjsnvnr7"]
+[gd_scene load_steps=5 format=3 uid="uid://8gjhtjsnvnr7"]
 
 [ext_resource type="Script" uid="uid://c3flrg4xr0xw4" path="res://syruprefins.gd" id="1_pbry7"]
 [ext_resource type="Script" uid="uid://d2hoj4pitdff6" path="res://repairbutton.gd" id="2_rqo5q"]
+[ext_resource type="Texture2D" uid="uid://dccx8jgc10f80" path="res://images/fixerbutton.png" id="3_h46d0"]
 [ext_resource type="Texture2D" uid="uid://cehc2ryhbd8hs" path="res://icon.svg" id="3_nxkbo"]
 
 [node name="Syrupgrinder" type="Node2D"]
@@ -10,17 +11,24 @@ script = ExtResource("1_pbry7")
 [node name="moneytimer" type="Timer" parent="."]
 autostart = true
 
-[node name="Button" type="Button" parent="."]
-offset_left = -12.0
-offset_top = -24.0
-offset_right = -4.0
-offset_bottom = -16.0
-script = ExtResource("2_rqo5q")
-
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, 1)
 scale = Vector2(0.1796875, 0.1796875)
 texture = ExtResource("3_nxkbo")
 
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-8, -20)
+scale = Vector2(0.22656246, 0.22656246)
+texture = ExtResource("3_h46d0")
+
+[node name="Button" type="Button" parent="Sprite2D2"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -13.2413845
+offset_top = -13.241379
+offset_right = 13.241381
+offset_bottom = 13.241394
+script = ExtResource("2_rqo5q")
+
 [connection signal="timeout" from="moneytimer" to="." method="_on_timer_timeout"]
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Sprite2D2/Button" to="." method="_on_button_pressed"]

@@ -4,7 +4,7 @@ var money = 0
 var multi = 1
 var amount1 = 0
 var limit1 = 2
-var amount2 = 1
+var amount2 = 0
 var limit2 = 50
 var amount3 = 0
 #code for spawning the syrup things on the screen.
