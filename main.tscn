@@ -12,37 +12,49 @@ script = ExtResource("1_ig7tw")
 
 [node name="clicker" parent="." instance=ExtResource("2_0xm2m")]
 z_index = 2
-position = Vector2(349.5, 852)
-scale = Vector2(1.075, 1.075)
+position = Vector2(342, 875)
+scale = Vector2(0.935, 0.935)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="clicker"]
+z_index = 1
+texture_filter = 1
+offset_left = -78.074875
+offset_top = -120.85561
+offset_right = 108.02138
+offset_bottom = -75.85561
+theme_override_font_sizes/normal_font_size = 32
+text = "CLICK ME!"
+fit_content = true
+scroll_active = false
 
 [node name="moneyamount" parent="." instance=ExtResource("3_h2yge")]
-position = Vector2(40, 133)
+position = Vector2(17, 121)
 
 [node name="SHOPBUTTON" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0)
 z_index = 2
-offset_left = 80.49999
-offset_top = 768.0
-offset_right = 240.5
-offset_bottom = 940.0
+offset_left = 70.0
+offset_top = 797.0
+offset_right = 230.0
+offset_bottom = 969.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(320.95316, 51.500004)
+position = Vector2(319.95316, 51.500004)
 scale = Vector2(2.9687502, 2.9687502)
 texture = ExtResource("4_1bvp3")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 z_index = 1
 texture_filter = 1
-position = Vector2(159.5, 861)
+position = Vector2(139, 877)
 scale = Vector2(4.9687495, 4.9687495)
 texture = ExtResource("5_lquwl")
 
 [node name="Sdsada" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(321.37503, 855)
-scale = Vector2(20.789063, 7.8320303)
+position = Vector2(312.68747, 872.00006)
+scale = Vector2(20.957027, 7.8320303)
 texture = ExtResource("6_7mycd")
 
 [connection signal="pressed" from="SHOPBUTTON" to="." method="_on_button_pressed"]
