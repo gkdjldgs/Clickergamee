@@ -1,7 +1,7 @@
 extends Node2D
 var broken = false
-var cost1 = int(autoload.amount1 * 1.25)
-var cost2 = int(autoload.amount2 * 1.4)
+var cost1 = int(autoload.amount1 * 5)
+var cost2 = int(autoload.amount2 * 7)
 var repair = round(cost1 + cost2)
 
 @onready var butt = get_node("Button")
@@ -27,15 +27,9 @@ func _process(delta: float) -> void:
 
 func _on_timer_timeout() -> void:
 	if broken == false:
-		autoload.money += 1
+		autoload.money += 0.5
 	elif broken == true:
 		pass
 
+	
 		
-
-
-func _on_button_pressed() -> void:
-	if autoload.money >= repair:
-		autoload.money -= repair
-		broken = false
-		butt.hide()
