@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://8gjhtjsnvnr7"]
 
 [ext_resource type="Script" uid="uid://c3flrg4xr0xw4" path="res://syruprefins.gd" id="1_pbry7"]
+[ext_resource type="Texture2D" uid="uid://gf6s6v2tfdk4" path="res://images/tap.png" id="2_h46d0"]
 [ext_resource type="Script" uid="uid://d2hoj4pitdff6" path="res://repairbutton.gd" id="2_rqo5q"]
 [ext_resource type="Texture2D" uid="uid://dccx8jgc10f80" path="res://images/fixerbutton.png" id="3_h46d0"]
-[ext_resource type="Texture2D" uid="uid://cehc2ryhbd8hs" path="res://icon.svg" id="3_nxkbo"]
 
 [node name="Syrupgrinder" type="Node2D"]
 script = ExtResource("1_pbry7")
@@ -12,9 +12,10 @@ script = ExtResource("1_pbry7")
 autostart = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, 1)
-scale = Vector2(0.1796875, 0.1796875)
-texture = ExtResource("3_nxkbo")
+texture_filter = 1
+position = Vector2(-2.3841858e-07, -3)
+scale = Vector2(0.58984375, 0.58984375)
+texture = ExtResource("2_h46d0")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 texture_filter = 1

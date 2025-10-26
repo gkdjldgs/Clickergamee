@@ -1,37 +1,48 @@
-[gd_scene load_steps=6 format=3 uid="uid://dfcweub1sjdla"]
+[gd_scene load_steps=7 format=3 uid="uid://dfcweub1sjdla"]
 
 [ext_resource type="Script" uid="uid://cqslnh7mgju7j" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://cabycvnnsayrh" path="res://clicker.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://gounb4o7ydxg" path="res://textbox.tscn" id="3_h2yge"]
 [ext_resource type="Texture2D" uid="uid://6hhgrrjjb5ss" path="res://images/shop title.png" id="4_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://caam0dd0bi1ap" path="res://images/shopping cart.png" id="5_lquwl"]
+[ext_resource type="Texture2D" uid="uid://32eyj2a0feko" path="res://sdsada.png" id="6_7mycd"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_ig7tw")
 
 [node name="clicker" parent="." instance=ExtResource("2_0xm2m")]
-position = Vector2(298, 846)
+z_index = 2
+position = Vector2(349.5, 852)
 scale = Vector2(1.075, 1.075)
 
 [node name="moneyamount" parent="." instance=ExtResource("3_h2yge")]
-position = Vector2(40, 127)
+position = Vector2(40, 133)
 
 [node name="SHOPBUTTON" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0)
-offset_left = 29.0
-offset_top = 762.0
-offset_right = 189.0
-offset_bottom = 934.0
+z_index = 2
+offset_left = 80.49999
+offset_top = 768.0
+offset_right = 240.5
+offset_bottom = 940.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(311.6875, 56)
-scale = Vector2(2.625, 2.625)
+texture_filter = 1
+position = Vector2(320.95316, 51.500004)
+scale = Vector2(2.9687502, 2.9687502)
 texture = ExtResource("4_1bvp3")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = 1
 texture_filter = 1
-position = Vector2(108, 855)
+position = Vector2(159.5, 861)
 scale = Vector2(4.9687495, 4.9687495)
 texture = ExtResource("5_lquwl")
+
+[node name="Sdsada" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(321.37503, 855)
+scale = Vector2(20.789063, 7.8320303)
+texture = ExtResource("6_7mycd")
 
 [connection signal="pressed" from="SHOPBUTTON" to="." method="_on_button_pressed"]

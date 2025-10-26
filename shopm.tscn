@@ -14,6 +14,7 @@
 script = ExtResource("1_k3r8j")
 
 [node name="Back Button" type="Button" parent="."]
+texture_filter = 1
 offset_left = 31.0
 offset_top = 881.0
 offset_right = 135.83871
@@ -22,6 +23,7 @@ theme_override_font_sizes/font_size = 26
 text = "BACK"
 
 [node name="Better harvesting" type="Button" parent="."]
+texture_filter = 1
 offset_left = 23.0
 offset_top = 140.0
 offset_right = 234.0
@@ -40,6 +42,7 @@ text = "COST: "
 script = ExtResource("3_46dqn")
 
 [node name="DESCRIPTION1" type="RichTextLabel" parent="Better harvesting"]
+texture_filter = 1
 layout_mode = 0
 offset_left = 234.0
 offset_top = 4.0
@@ -51,6 +54,7 @@ text = "Description:
 Allows you to get more 	syrup per click."
 
 [node name="AMOUNT1" type="RichTextLabel" parent="Better harvesting"]
+texture_filter = 1
 layout_mode = 0
 offset_left = 99.0
 offset_top = 131.0
@@ -60,6 +64,7 @@ text = "AMOUNT:"
 script = ExtResource("4_o8ktc")
 
 [node name="Syrup Refineries" type="Button" parent="."]
+texture_filter = 1
 offset_left = 25.0
 offset_top = 329.0
 offset_right = 235.0
@@ -68,6 +73,7 @@ text = "Syrup Refineries"
 script = ExtResource("5_d56hx")
 
 [node name="DESCRIPTION2" type="RichTextLabel" parent="Syrup Refineries"]
+texture_filter = 1
 layout_mode = 0
 offset_left = 232.0
 offset_top = -12.0
@@ -76,10 +82,10 @@ offset_bottom = 144.0
 theme_override_font_sizes/normal_font_size = 19
 text = "Description:
 
-Causes you to gain passive syrup over time, 
-but has a chance to break."
+Causes you to gain passive syrup over time, but has a chance to break. (Needing repairs)"
 
 [node name="AMOUNT2" type="RichTextLabel" parent="Syrup Refineries"]
+texture_filter = 1
 layout_mode = 0
 offset_left = 101.0
 offset_top = 133.0
@@ -89,6 +95,7 @@ text = "AMOUNT:"
 script = ExtResource("6_liigi")
 
 [node name="COST2" type="RichTextLabel" parent="Syrup Refineries"]
+texture_filter = 1
 layout_mode = 0
 offset_left = 12.0
 offset_top = 133.0
@@ -98,13 +105,15 @@ text = "COST: "
 script = ExtResource("5_lanyg")
 
 [node name="Sky Syrup" type="Button" parent="."]
+texture_filter = 1
 offset_left = 27.0
 offset_top = 513.0
 offset_right = 228.0
 offset_bottom = 627.0
-text = "Sky Syrup"
+text = "Falling Leaves"
 
 [node name="DESCRIPTION3" type="RichTextLabel" parent="Sky Syrup"]
+texture_filter = 1
 layout_mode = 0
 offset_left = 224.0
 offset_top = -5.0
@@ -117,6 +126,7 @@ Falling leaves from the
 sky and drop collectable bonuses."
 
 [node name="AMOUNT 3" type="RichTextLabel" parent="Sky Syrup"]
+texture_filter = 1
 layout_mode = 0
 offset_left = 98.0
 offset_top = 130.0
@@ -125,6 +135,7 @@ offset_bottom = 170.0
 text = "AMOUNT:"
 
 [node name="COST3" type="RichTextLabel" parent="Sky Syrup"]
+texture_filter = 1
 layout_mode = 0
 offset_left = 9.0
 offset_top = 130.0
@@ -150,17 +161,19 @@ offset_bottom = 170.0
 text = "COST:"
 
 [node name="TextEdit" type="TextEdit" parent="."]
-offset_left = 213.0
-offset_top = 885.0
-offset_right = 589.0
-offset_bottom = 942.0
+texture_filter = 1
+offset_left = 428.0
+offset_top = 886.0
+offset_right = 608.0
+offset_bottom = 943.0
 theme_override_font_sizes/font_size = 29
 text = "SYRUP: "
 script = ExtResource("4_fm3n6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(325, 60)
-scale = Vector2(2.53125, 2.53125)
+texture_filter = 1
+position = Vector2(343.50784, 54.75)
+scale = Vector2(3.140625, 3.140625)
 texture = ExtResource("9_abuh3")
 
 [connection signal="pressed" from="Back Button" to="." method="_on_button_pressed"]
