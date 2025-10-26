@@ -11,10 +11,11 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	var death = randi_range(30, 300)
-	await get_tree().create_timer(death).timeout
-	butt.show()
-	broken = true
+	pass
+	#var death = randi_range(30, 300)
+	#await get_tree().create_timer(death).timeout
+	#butt.show()
+	#broken = true
 	
 	#if autoload.amount2 > 0:
 	#	for val in range(autoload.amount2):

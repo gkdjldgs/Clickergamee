@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://8gjhtjsnvnr7"]
+[gd_scene load_steps=4 format=3 uid="uid://8gjhtjsnvnr7"]
 
 [ext_resource type="Script" uid="uid://c3flrg4xr0xw4" path="res://syruprefins.gd" id="1_pbry7"]
 [ext_resource type="Script" uid="uid://d2hoj4pitdff6" path="res://repairbutton.gd" id="2_rqo5q"]
+[ext_resource type="Texture2D" uid="uid://cehc2ryhbd8hs" path="res://icon.svg" id="3_nxkbo"]
 
 [node name="Syrupgrinder" type="Node2D"]
 script = ExtResource("1_pbry7")
@@ -17,6 +18,9 @@ offset_bottom = -16.0
 script = ExtResource("2_rqo5q")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 1)
+scale = Vector2(0.1796875, 0.1796875)
+texture = ExtResource("3_nxkbo")
 
 [connection signal="timeout" from="moneytimer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
