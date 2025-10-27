@@ -1,25 +1,32 @@
-[gd_scene load_steps=9 format=3 uid="uid://b8a2vxisi0my2"]
+[gd_scene load_steps=14 format=3 uid="uid://b8a2vxisi0my2"]
 
 [ext_resource type="Script" uid="uid://bsxblpmoafoj0" path="res://shopm.gd" id="1_k3r8j"]
+[ext_resource type="Texture2D" uid="uid://5w5hmiy8aehv" path="res://images/backbutton.png" id="2_5a34q"]
 [ext_resource type="Script" uid="uid://cgfhbb1wr2ma6" path="res://buy_button.gd" id="2_exc4s"]
 [ext_resource type="Script" uid="uid://bnwthufs0wqxm" path="res://cost_1.gd" id="3_46dqn"]
 [ext_resource type="Script" uid="uid://bp3nvprv20nn2" path="res://amount_1.gd" id="4_o8ktc"]
 [ext_resource type="Script" uid="uid://dm7uago7w6mg" path="res://syrup_refineries.gd" id="5_d56hx"]
 [ext_resource type="Script" uid="uid://bng2b53s0t8il" path="res://cost_2.gd" id="5_lanyg"]
 [ext_resource type="Script" uid="uid://b1u8ev1118yj8" path="res://amount_2.gd" id="6_liigi"]
+[ext_resource type="PackedScene" uid="uid://gounb4o7ydxg" path="res://textbox.tscn" id="8_abuh3"]
 [ext_resource type="Texture2D" uid="uid://rbj174f0mvbu" path="res://images/othertitle.png" id="9_abuh3"]
+[ext_resource type="Texture2D" uid="uid://dcg1cccndwrfg" path="res://images/backback.png" id="11_nb6gh"]
+[ext_resource type="Texture2D" uid="uid://b47sbrgtxvwqo" path="res://images/balckbar.png" id="12_som31"]
+[ext_resource type="Texture2D" uid="uid://bakn68gpa5i6w" path="res://images/backgrounddd.png" id="13_m83uv"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_k3r8j")
 
 [node name="Back Button" type="Button" parent="."]
 texture_filter = 1
-offset_left = 31.0
-offset_top = 881.0
-offset_right = 135.83871
-offset_bottom = 946.0
+offset_left = 25.0
+offset_top = 838.0
+offset_right = 168.0
+offset_bottom = 915.0
+theme_override_colors/font_color = Color(0.32941177, 0.16862746, 0.043137256, 1)
 theme_override_font_sizes/font_size = 26
 text = "BACK"
+icon = ExtResource("2_5a34q")
 
 [node name="Better harvesting" type="Button" parent="."]
 texture_filter = 1
@@ -28,6 +35,8 @@ offset_top = 577.0
 offset_right = 399.0
 offset_bottom = 697.0
 scale = Vector2(0.7991584, 0.797623)
+theme_override_colors/font_color = Color(0.32941177, 0.16862746, 0.043137256, 1)
+theme_override_font_sizes/font_size = 23
 text = "Better Harvesting
 "
 script = ExtResource("2_exc4s")
@@ -38,6 +47,7 @@ offset_left = 2.5026164
 offset_top = 124.118805
 offset_right = 110.11584
 offset_bottom = 164.1188
+theme_override_colors/default_color = Color(0.32941177, 0.16862746, 0.043137256, 1)
 text = "COST: "
 script = ExtResource("3_46dqn")
 
@@ -49,6 +59,7 @@ offset_top = 4.0
 offset_right = 535.0
 offset_bottom = 119.0
 scale = Vector2(1.0036145, 1)
+theme_override_colors/default_color = Color(0.32941177, 0.16862746, 0.043137256, 1)
 theme_override_font_sizes/normal_font_size = 19
 text = "Description:
 
@@ -61,6 +72,7 @@ offset_left = 105.11056
 offset_top = 125.37255
 offset_right = 213.11057
 offset_bottom = 165.37256
+theme_override_colors/default_color = Color(0.32941177, 0.16862746, 0.043137256, 1)
 text = "AMOUNT:"
 script = ExtResource("4_o8ktc")
 
@@ -71,6 +83,8 @@ offset_top = 708.0
 offset_right = 398.0
 offset_bottom = 825.0
 scale = Vector2(0.7991584, 0.797623)
+theme_override_colors/font_color = Color(0.32941177, 0.16862746, 0.043137256, 1)
+theme_override_font_sizes/font_size = 25
 text = "Syrup Refineries"
 script = ExtResource("5_d56hx")
 
@@ -81,28 +95,31 @@ offset_left = 232.0
 offset_top = -12.0
 offset_right = 557.0
 offset_bottom = 144.0
+theme_override_colors/default_color = Color(0.32941177, 0.16862746, 0.043137256, 1)
 theme_override_font_sizes/normal_font_size = 19
 text = "Description:
 
-Causes you to gain 1 passive syrup over time"
+Causes you to gain 1 passive syrup over time."
 
 [node name="AMOUNT2" type="RichTextLabel" parent="Syrup Refineries"]
 texture_filter = 1
 layout_mode = 0
-offset_left = 103.85926
-offset_top = 117.85016
-offset_right = 206.85925
-offset_bottom = 157.85016
+offset_left = 108.864525
+offset_top = 119.10388
+offset_right = 211.86452
+offset_bottom = 159.10388
+theme_override_colors/default_color = Color(0.32941177, 0.16862746, 0.043137256, 1)
 text = "AMOUNT:"
 script = ExtResource("6_liigi")
 
 [node name="COST2" type="RichTextLabel" parent="Syrup Refineries"]
 texture_filter = 1
 layout_mode = 0
-offset_left = 2.5026274
-offset_top = 121.611336
-offset_right = 106.36188
-offset_bottom = 161.61133
+offset_left = 5.0052605
+offset_top = 120.35761
+offset_right = 108.86452
+offset_bottom = 160.3576
+theme_override_colors/default_color = Color(0.32941177, 0.16862746, 0.043137256, 1)
 text = "COST: "
 script = ExtResource("5_lanyg")
 
@@ -113,6 +130,8 @@ offset_top = 835.0
 offset_right = 394.0
 offset_bottom = 949.0
 scale = Vector2(0.7991584, 0.797623)
+theme_override_colors/font_color = Color(0.32941177, 0.16862746, 0.043137256, 1)
+theme_override_font_sizes/font_size = 28
 text = "Falling Leaves"
 
 [node name="DESCRIPTION3" type="RichTextLabel" parent="Sky Syrup"]
@@ -122,11 +141,11 @@ offset_left = 224.54774
 offset_top = -1.4302483
 offset_right = 541.5477
 offset_bottom = 120.56975
+theme_override_colors/default_color = Color(0.32941177, 0.16862746, 0.043137256, 1)
 theme_override_font_sizes/normal_font_size = 19
 text = "Description:
 
-Falling leaves from the 
-sky and drop collectable bonuses."
+Falling leaves appear randomly! What rewards will you get?"
 
 [node name="AMOUNT 3" type="RichTextLabel" parent="Sky Syrup"]
 texture_filter = 1
@@ -135,6 +154,7 @@ offset_left = 101.35663
 offset_top = 119.103905
 offset_right = 205.35663
 offset_bottom = 159.10391
+theme_override_colors/default_color = Color(0.32941177, 0.16862746, 0.043137256, 1)
 text = "AMOUNT:"
 
 [node name="COST3" type="RichTextLabel" parent="Sky Syrup"]
@@ -144,8 +164,13 @@ offset_left = 1.2513123
 offset_top = 120.35763
 offset_right = 95.25131
 offset_bottom = 160.35764
+theme_override_colors/default_color = Color(0.32941177, 0.16862746, 0.043137256, 1)
 text = "COST: "
 script = ExtResource("3_46dqn")
+
+[node name="Node2D" parent="Sky Syrup" instance=ExtResource("8_abuh3")]
+position = Vector2(-226.48828, -323.46106)
+scale = Vector2(1.78, 1.78)
 
 [node name="FINISH" type="Button" parent="."]
 visible = false
@@ -165,9 +190,43 @@ text = "COST:"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(329.99997, 530)
+position = Vector2(336, 53)
 scale = Vector2(3.140625, 3.140625)
 texture = ExtResource("9_abuh3")
+
+[node name="Backback" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(323, 768.5)
+scale = Vector2(1.0030864, 3.1796875)
+texture = ExtResource("11_nb6gh")
+
+[node name="Balckbar" type="Sprite2D" parent="."]
+position = Vector2(323, 564)
+scale = Vector2(1, 0.1875)
+texture = ExtResource("12_som31")
+
+[node name="Backback2" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(646.99695, 3212.0898)
+scale = Vector2(1.0061824, 10.110413)
+texture = ExtResource("11_nb6gh")
+
+[node name="Backback3" type="Sprite2D" parent="."]
+z_index = -7
+position = Vector2(324, 50.5)
+scale = Vector2(1, 0.8515625)
+texture = ExtResource("11_nb6gh")
+
+[node name="Balckbar2" type="Sprite2D" parent="."]
+position = Vector2(323.5, 110.5)
+scale = Vector2(1.0015432, 0.1328125)
+texture = ExtResource("12_som31")
+
+[node name="Backgrounddd" type="Sprite2D" parent="."]
+z_index = -8
+position = Vector2(321.75, 487.95557)
+scale = Vector2(1.5913581, 1.5913581)
+texture = ExtResource("13_m83uv")
 
 [connection signal="pressed" from="Back Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Better harvesting" to="Better harvesting" method="_on_pressed"]

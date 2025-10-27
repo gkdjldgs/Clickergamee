@@ -14,8 +14,10 @@ scale = Vector2(3.89, 3.89)
 [node name="RichTextLabel" type="RichTextLabel" parent="StaticBody2D"]
 offset_right = 166.83804
 offset_bottom = 40.0
+theme_override_colors/default_color = Color(0.32941177, 0.16862746, 0.043137256, 1)
 script = ExtResource("1_vng66")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+texture_filter = 1
 position = Vector2(83.303345, 18.007713)
 shape = SubResource("RectangleShape2D_vng66")

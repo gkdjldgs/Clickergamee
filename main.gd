@@ -1,6 +1,6 @@
 extends Node2D
 #many important global variables
-var money = 999999
+var money = 0
 var multi = 1
 var amount1 = 0
 var limit1 = 2
