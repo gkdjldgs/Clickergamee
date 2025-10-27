@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2aqsef2jd4eq"]
+
+[ext_resource type="Script" uid="uid://b5b7gomscko82" path="res://sadleaf.gd" id="1_vkkw8"]
+[ext_resource type="Texture2D" uid="uid://bdicc30uj8v1y" path="res://images/removesyrup.png" id="2_mwvgs"]
+
+[node name="Node2D" type="Node2D"]
+z_index = 2
+script = ExtResource("1_vkkw8")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 4.5
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-9, 3)
+scale = Vector2(0.08984375, 0.08984375)
+texture = ExtResource("2_mwvgs")
+
+[node name="Button" type="Button" parent="Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_right = 0.87058425
+anchor_bottom = 0.87058425
+offset_left = -66.78261
+offset_top = -66.78261
+offset_right = -55.782608
+offset_bottom = -55.782608
+metadata/_edit_use_anchors_ = true

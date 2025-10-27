@@ -84,4 +84,8 @@ position = Vector2(321.75, 487.95557)
 scale = Vector2(1.5913581, 1.5913581)
 texture = ExtResource("8_5vw27")
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+
 [connection signal="pressed" from="SHOPBUTTON" to="." method="_on_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

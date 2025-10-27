@@ -27,7 +27,7 @@ func _process(delta: float) -> void:
 
 func _on_timer_timeout() -> void:
 	if broken == false:
-		autoload.money += 0.5
+		autoload.money += autoload.multi
 	elif broken == true:
 		pass
 

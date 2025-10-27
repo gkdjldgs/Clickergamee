@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b8a2vxisi0my2"]
+[gd_scene load_steps=15 format=3 uid="uid://b8a2vxisi0my2"]
 
 [ext_resource type="Script" uid="uid://bsxblpmoafoj0" path="res://shopm.gd" id="1_k3r8j"]
 [ext_resource type="Texture2D" uid="uid://5w5hmiy8aehv" path="res://images/backbutton.png" id="2_5a34q"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://b1u8ev1118yj8" path="res://amount_2.gd" id="6_liigi"]
 [ext_resource type="PackedScene" uid="uid://gounb4o7ydxg" path="res://textbox.tscn" id="8_abuh3"]
 [ext_resource type="Texture2D" uid="uid://rbj174f0mvbu" path="res://images/othertitle.png" id="9_abuh3"]
+[ext_resource type="Script" uid="uid://00aoqp465w7r" path="res://fallingleaves.gd" id="9_s4o6t"]
 [ext_resource type="Texture2D" uid="uid://dcg1cccndwrfg" path="res://images/backback.png" id="11_nb6gh"]
 [ext_resource type="Texture2D" uid="uid://b47sbrgtxvwqo" path="res://images/balckbar.png" id="12_som31"]
 [ext_resource type="Texture2D" uid="uid://bakn68gpa5i6w" path="res://images/backgrounddd.png" id="13_m83uv"]
@@ -133,6 +134,7 @@ scale = Vector2(0.7991584, 0.797623)
 theme_override_colors/font_color = Color(0.32941177, 0.16862746, 0.043137256, 1)
 theme_override_font_sizes/font_size = 28
 text = "Falling Leaves"
+script = ExtResource("9_s4o6t")
 
 [node name="DESCRIPTION3" type="RichTextLabel" parent="Sky Syrup"]
 texture_filter = 1

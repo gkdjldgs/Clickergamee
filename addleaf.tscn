@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6sitmpbo1n50"]
+
+[ext_resource type="Texture2D" uid="uid://rtywpuxxq41k" path="res://images/add syrup.png" id="1_avr3h"]
+[ext_resource type="Script" uid="uid://dsp3u6167xcph" path="res://addleaf.gd" id="1_grsyb"]
+
+[node name="Node2D" type="Node2D"]
+z_index = 2
+script = ExtResource("1_grsyb")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.4
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+mass = 2.875
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_avr3h")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = -63.0
+offset_top = -63.0
+offset_right = 61.0
+offset_bottom = 61.0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="child_entered_tree" from="RigidBody2D" to="." method="_on_rigid_body_2d_child_entered_tree"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

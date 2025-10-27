@@ -7,6 +7,8 @@ var limit1 = 2
 var amount2 = 0
 var limit2 = 50
 var amount3 = 0
+var limit3 = 500
+var huh = false
 #code for spawning the syrup things on the screen.
 var syr = amount2
 var ball = 1
@@ -40,3 +42,7 @@ func _on_button_pressed() -> void:
 	get_tree().change_scene_to_file('res://shopm.tscn')
 	check = 0
 	print(check)
+
+
+func _on_timer_timeout() -> void:
+	pass # Replace with function body.
