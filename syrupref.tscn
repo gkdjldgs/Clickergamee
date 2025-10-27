@@ -11,7 +11,7 @@ scale = Vector2(7.03, 7.03)
 script = ExtResource("1_pbry7")
 
 [node name="moneytimer" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 2.0
 autostart = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
