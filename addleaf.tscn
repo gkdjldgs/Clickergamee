@@ -8,7 +8,9 @@ z_index = 2
 script = ExtResource("1_grsyb")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 2.4
+wait_time = 5.0
+one_shot = true
+autostart = true
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
 mass = 2.875

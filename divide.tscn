@@ -1,11 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://bausfpa6p6u35"]
+[gd_scene load_steps=3 format=3 uid="uid://dhte4utaxd0u2"]
 
-[ext_resource type="Script" uid="uid://bqompsr5vliae" path="res://multiply.gd" id="1_oqiuo"]
-[ext_resource type="Texture2D" uid="uid://byfivw37eauo5" path="res://images/3xsyrup.png" id="2_oqiuo"]
+[ext_resource type="Script" uid="uid://b5b7gomscko82" path="res://sadleaf.gd" id="1_sctv4"]
+[ext_resource type="Texture2D" uid="uid://eq6jkh50bst4" path="res://images/3.syrup.png" id="2_sctv4"]
 
 [node name="Node2D" type="Node2D"]
 z_index = 2
-script = ExtResource("1_oqiuo")
+script = ExtResource("1_sctv4")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 11.0
@@ -16,7 +16,7 @@ autostart = true
 mass = 2.875
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_oqiuo")
+texture = ExtResource("2_sctv4")
 
 [node name="Button" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0)

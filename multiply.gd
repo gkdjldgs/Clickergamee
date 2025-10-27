@@ -10,7 +10,7 @@ func _process(delta: float) -> void:
 
 func _on_button_pressed() -> void:
 	self.position.x = -1000
-	autoload.multi = 0.33
+	autoload.multi = 3
 	await get_tree().create_timer(4).timeout
 	autoload.multi = 1
 	self.queue_free()

@@ -85,7 +85,10 @@ scale = Vector2(1.5913581, 1.5913581)
 texture = ExtResource("8_5vw27")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 5.0
+
+[node name="Timer2" type="Timer" parent="."]
+autostart = true
 
 [connection signal="pressed" from="SHOPBUTTON" to="." method="_on_button_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]

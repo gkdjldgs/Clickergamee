@@ -8,7 +8,7 @@ var amount2 = 0
 var limit2 = 50
 var amount3 = 0
 var limit3 = 500
-var huh = false
+var huh = true
 #code for spawning the syrup things on the screen.
 var syr = amount2
 var ball = 1
@@ -44,5 +44,34 @@ func _on_button_pressed() -> void:
 	print(check)
 
 
-func _on_timer_timeout() -> void:
-	pass # Replace with function body.
+
+
+func _on_timer_2_timeout() -> void:
+	if huh == true:
+		var coyote = randi_range(5,25)
+		await get_tree().create_timer(coyote).timeout
+		var type = randi_range(1,6)
+		var temposx = randi_range(50,600)
+		var temposy = 200
+		var leaf1 = preload("res://addleaf.tscn")
+		var leaf2 = preload('res://remove.tscn')
+		var leaf3 = preload('res://multiply.tscn')
+		var leaf4 = preload('res://divide.tscn')
+		if type == 1 or type == 2:
+			var Leaf1 = leaf1.instantiate()
+			add_child(Leaf1)
+			Leaf1.position = Vector2(temposx,temposy)
+		elif type == 3 or type == 4:
+			var Leaf2 = leaf2.instantiate()
+			add_child(Leaf2)
+			Leaf2.position = Vector2(temposx,temposy)
+		elif type == 5:
+			var Leaf3 = leaf3.instantiate()
+			add_child(Leaf3)
+			Leaf3.position = Vector2(temposx,temposy)
+		elif type == 6:
+			var Leaf4 = leaf4.instantiate()
+			add_child(Leaf4)
+			Leaf4.position = Vector2(temposx,temposy)
+	else:
+		pass
