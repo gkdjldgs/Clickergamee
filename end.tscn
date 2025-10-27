@@ -1,0 +1,67 @@
+[gd_scene load_steps=5 format=3 uid="uid://bgqr5lps7kuxe"]
+
+[ext_resource type="Texture2D" uid="uid://bakn68gpa5i6w" path="res://images/backgrounddd.png" id="1_n735c"]
+[ext_resource type="Texture2D" uid="uid://dcg1cccndwrfg" path="res://images/backback.png" id="2_75yvt"]
+[ext_resource type="Texture2D" uid="uid://b47sbrgtxvwqo" path="res://images/balckbar.png" id="3_jclhh"]
+[ext_resource type="Texture2D" uid="uid://dohi8s5sf7sim" path="res://fin.png" id="4_m3e5g"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Backgrounddd" type="Sprite2D" parent="."]
+z_index = 11
+position = Vector2(321.0001, 489)
+scale = Vector2(1.5913581, 1.5913581)
+texture = ExtResource("1_n735c")
+
+[node name="TextEdit" type="RichTextLabel" parent="."]
+z_index = 13
+offset_left = 76.0
+offset_top = 170.0
+offset_right = 555.0
+offset_bottom = 233.0
+theme_override_colors/default_color = Color(0.32941177, 0.16862746, 0.043137256, 1)
+text = "HAVING GAINED ENOUGH SYRUP TO LAST A LIFETIME YOU
+SIT DOWN AND EAT A PANCAKE"
+
+[node name="TextEdit2" type="RichTextLabel" parent="."]
+z_index = 13
+offset_left = 185.0
+offset_top = 630.0
+offset_right = 664.0
+offset_bottom = 693.0
+theme_override_colors/default_color = Color(0.32941177, 0.16862746, 0.043137256, 1)
+theme_override_font_sizes/normal_font_size = 21
+text = "THANK YOU FOR PLAYING!
+ENJOY THE PANCAKE :)"
+
+[node name="Sdsada" type="Sprite2D" parent="."]
+z_index = 15
+texture_filter = 1
+position = Vector2(325.5, 870.5)
+scale = Vector2(1.0231482, 1.6640627)
+texture = ExtResource("2_75yvt")
+
+[node name="Balckbar" type="Sprite2D" parent="."]
+z_index = 15
+position = Vector2(316.5, 752.75)
+scale = Vector2(1.0324074, 0.21484366)
+texture = ExtResource("3_jclhh")
+
+[node name="Backback" type="Sprite2D" parent="."]
+z_index = 15
+position = Vector2(318, 36)
+scale = Vector2(1.037037, 1)
+texture = ExtResource("2_75yvt")
+
+[node name="Balckbar2" type="Sprite2D" parent="."]
+z_index = 15
+position = Vector2(328.5, 111)
+scale = Vector2(1.0385803, 0.15625)
+texture = ExtResource("3_jclhh")
+
+[node name="Fin" type="Sprite2D" parent="."]
+z_index = 15
+texture_filter = 1
+position = Vector2(310, 454)
+scale = Vector2(3.375, 3.375)
+texture = ExtResource("4_m3e5g")

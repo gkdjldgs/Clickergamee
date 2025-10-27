@@ -8,7 +8,8 @@ var amount2 = 0
 var limit2 = 50
 var amount3 = 0
 var limit3 = 250
-var huh = true
+var huh = false
+var what = false
 #code for spawning the syrup things on the screen.
 var syr = amount2
 var ball = 1

@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://b8a2vxisi0my2"]
+[gd_scene load_steps=17 format=3 uid="uid://b8a2vxisi0my2"]
 
 [ext_resource type="Script" uid="uid://bsxblpmoafoj0" path="res://shopm.gd" id="1_k3r8j"]
 [ext_resource type="Texture2D" uid="uid://5w5hmiy8aehv" path="res://images/backbutton.png" id="2_5a34q"]
@@ -13,6 +13,7 @@
 [ext_resource type="Script" uid="uid://00aoqp465w7r" path="res://fallingleaves.gd" id="9_s4o6t"]
 [ext_resource type="Script" uid="uid://bb13n6buh45lq" path="res://cost_3.gd" id="10_qo5q5"]
 [ext_resource type="Texture2D" uid="uid://dcg1cccndwrfg" path="res://images/backback.png" id="11_nb6gh"]
+[ext_resource type="Script" uid="uid://c06j3yfw2q8co" path="res://finish.gd" id="12_5vki6"]
 [ext_resource type="Texture2D" uid="uid://b47sbrgtxvwqo" path="res://images/balckbar.png" id="12_som31"]
 [ext_resource type="Texture2D" uid="uid://bakn68gpa5i6w" path="res://images/backgrounddd.png" id="13_m83uv"]
 
@@ -166,20 +167,23 @@ position = Vector2(-226.48828, -323.46106)
 scale = Vector2(1.78, 1.78)
 
 [node name="FINISH" type="Button" parent="."]
-visible = false
-offset_left = 31.0
-offset_top = 692.0
-offset_right = 234.0
-offset_bottom = 804.0
-text = "Finish the game"
+offset_left = 28.0
+offset_top = 644.0
+offset_right = 164.0
+offset_bottom = 789.0
+theme_override_colors/font_color = Color(0.32941177, 0.16862746, 0.043137256, 1)
+theme_override_font_sizes/font_size = 100
+text = "?"
+script = ExtResource("12_5vki6")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="FINISH"]
 layout_mode = 0
-offset_left = 7.0
-offset_top = 130.0
-offset_right = 103.0
-offset_bottom = 170.0
-text = "COST:"
+offset_left = 9.0
+offset_top = 148.0
+offset_right = 105.0
+offset_bottom = 188.0
+theme_override_colors/default_color = Color(0.32941177, 0.16862746, 0.043137256, 1)
+text = "COST: 750"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -224,3 +228,5 @@ texture = ExtResource("13_m83uv")
 [connection signal="pressed" from="Back Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Better harvesting" to="Better harvesting" method="_on_pressed"]
 [connection signal="pressed" from="Syrup Refineries" to="Syrup Refineries" method="_on_pressed"]
+[connection signal="pressed" from="Sky Syrup" to="Sky Syrup" method="_on_pressed"]
+[connection signal="pressed" from="FINISH" to="FINISH" method="_on_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dfcweub1sjdla"]
+[gd_scene load_steps=12 format=3 uid="uid://dfcweub1sjdla"]
 
 [ext_resource type="Script" uid="uid://cqslnh7mgju7j" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://cabycvnnsayrh" path="res://clicker.tscn" id="2_0xm2m"]
@@ -8,6 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://dcg1cccndwrfg" path="res://images/backback.png" id="6_7mycd"]
 [ext_resource type="Texture2D" uid="uid://b47sbrgtxvwqo" path="res://images/balckbar.png" id="7_272bh"]
 [ext_resource type="Texture2D" uid="uid://bakn68gpa5i6w" path="res://images/backgrounddd.png" id="8_5vw27"]
+[ext_resource type="Script" uid="uid://cjq01a6patjx4" path="res://spriteee.gd" id="9_4c57u"]
+[ext_resource type="Texture2D" uid="uid://dohi8s5sf7sim" path="res://fin.png" id="9_kek77"]
+[ext_resource type="Script" uid="uid://jkjlva41nl1r" path="res://sprite_2d_3.gd" id="11_efxa6"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_ig7tw")
@@ -89,6 +92,21 @@ texture = ExtResource("8_5vw27")
 [node name="Timer2" type="Timer" parent="."]
 wait_time = 9.540999999999999
 autostart = true
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 464.0
+offset_top = 810.0
+offset_right = 615.0
+offset_bottom = 961.0
+script = ExtResource("9_4c57u")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(538, 873)
+scale = Vector2(2.3359387, 2.3359387)
+texture = ExtResource("9_kek77")
+script = ExtResource("11_efxa6")
 
 [connection signal="pressed" from="SHOPBUTTON" to="." method="_on_button_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
