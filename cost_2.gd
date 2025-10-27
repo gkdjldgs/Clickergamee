@@ -9,9 +9,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if autoload.amount1 >= 5:
+	if amount >= 3:
 		var texts = str(texting,str(autoload.limit2))
 		self.text = texts
-	elif autoload.amount1 < 5:
-		var texts = texted
-		self.text = texts
+	else:
+		self.text = texted

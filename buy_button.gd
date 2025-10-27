@@ -14,8 +14,8 @@ func _process(delta: float) -> void:
 func _on_pressed() -> void:
 	if autoload.money >= autoload.limit1:
 		autoload.money = autoload.money - autoload.limit1
+		autoload.limit1 *= 1.5
 		autoload.limit1 += 7
-		autoload.limit1 *= 1.2
 		autoload.limit1 = round(autoload.limit1)
 		autoload.multi = autoload.multi + 1
 		autoload.amount1 = autoload.amount1 + 1

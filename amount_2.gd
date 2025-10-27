@@ -5,5 +5,5 @@ var filler = "AMOUNT: "
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	var text = str(filler, str(autoload.amount2))
-	self.text = (text)
+	var texts = str(filler, str(autoload.amount2))
+	self.text = (texts)
