@@ -87,6 +87,7 @@ texture = ExtResource("8_5vw27")
 [node name="Timer" type="Timer" parent="."]
 
 [node name="Timer2" type="Timer" parent="."]
+wait_time = 9.540999999999999
 autostart = true
 
 [connection signal="pressed" from="SHOPBUTTON" to="." method="_on_button_pressed"]

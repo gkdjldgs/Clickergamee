@@ -1,5 +1,5 @@
 extends RichTextLabel
-var texting = 'COST: 500 '
+var texting = 'COST: 250 '
 var textin = "OUT OF STOCK"
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
