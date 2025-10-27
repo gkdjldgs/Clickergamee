@@ -28,7 +28,7 @@ fit_content = true
 scroll_active = false
 
 [node name="moneyamount" parent="." instance=ExtResource("3_h2yge")]
-position = Vector2(17, 121)
+position = Vector2(20, 640)
 
 [node name="SHOPBUTTON" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0)

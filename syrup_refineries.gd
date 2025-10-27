@@ -8,3 +8,4 @@ func _on_pressed() -> void:
 		autoload.limit2 -= -7
 		autoload.limit1 = round(autoload.limit1)
 		autoload.amount2 = autoload.amount2 + 1
+		autoload.syrupspawn()
